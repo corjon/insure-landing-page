@@ -313,6 +313,7 @@ footer {
   }
 
   header nav ul a {
+    white-space: nowrap;
     margin-left: 1.5rem;
     color: var(--dark-grayish-violet);
     font-weight: 700;
