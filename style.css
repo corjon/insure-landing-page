@@ -79,13 +79,12 @@ p {
 header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
   padding: 24px;
-  position: relative;
 }
 
 .hamburger {
-  margin-left: auto;
   cursor: pointer;
   background: transparent;
   border: none;
@@ -124,6 +123,10 @@ header nav ul li:last-child a {
   background-image: url("images/bg-pattern-mobile-nav.svg");
   background-repeat: no-repeat;
   background-position: bottom;
+}
+
+.container:has(.menu.active) {
+  position: fixed;
 }
 
 .menu.active a {
